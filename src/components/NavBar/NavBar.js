@@ -1,16 +1,8 @@
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
 import logo1 from '../../resources/logo1.png'
 import './NavBar.css'
-import SearchBar from 'material-ui-search-bar'
 
 const Navbar = () => {
-
-    const [query, setQuery] = useState('')
-
-    const handleSearch = () => {
-        console.log(query)
-    }
 
     return (
         <header>
@@ -35,12 +27,6 @@ const Navbar = () => {
                         <Link to="/new-matter">
                             <h2>Add New Matter</h2>
                         </Link>
-                    </li>
-                    <li className='search'>
-                    <SearchBar
-                        onChange={(e) => {setQuery(e)}}
-                        onRequestSearch={() => handleSearch()}
-                        />
                     </li>
                 </ul>
             </div>
