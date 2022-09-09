@@ -11,13 +11,17 @@ const CaseDetails = ({ matter }) => {
 
 
 const highestPercentage = (p) => {
-    if (p[0][1] > p[1][1] && p[1][1] > p[2][1]) {
-      return p[0][0]
+  const one = parseFloat(p[0][1])
+  const two = parseFloat(p[1][1])
+  const three = parseFloat(p[2][1])
+
+    if (one > two && one > three) {
+      return p[0][0] + " outcome"
     }
-    if (p[1][1] > p[2][1] && p[2][1] > p[0][1]) {
-      return p[1][0]
+    else if (two > one && two > three) {
+      return p[1][0] + " outcome"
     }
-    return p[2][0]
+    else return p[2][0] + " outcome"
 }
 
   const { dispatch } = useCasesContext()
