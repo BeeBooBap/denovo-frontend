@@ -2,9 +2,6 @@ import { useCasesContext } from '../../hooks/useCasesContext'
 import { RiDeleteBin6Line } from 'react-icons/ri'
 import './CaseDetails.css'
 
-// date fns
-import formatRelative from 'date-fns/formatRelative'
-
 const CaseDetails = ({ matter }) => {
 
   // importing data from resources
