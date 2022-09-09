@@ -1,0 +1,29 @@
+header{
+    background: var(--primary);
+  }
+.nav{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+  }
+.nav .logo {
+    max-width: 80px;
+  }
+a {
+    color: #c5c9bd;
+    text-decoration: none;
+  }
+.nav .navbar-items {
+  list-style-type: none;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.nav .navbar-items li {
+  padding: 0px 15px;
+}

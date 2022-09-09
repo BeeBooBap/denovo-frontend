@@ -1,0 +1,37 @@
+label, input {
+    display: block;
+    margin: 10px 10px;
+  }
+  h3{
+    margin: 20px 10px;
+  }
+  input {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  form button {
+    background: var(--tertiary);
+    border: 0;
+    color: #fff;
+    padding: 10px;
+    font-family: "Poppins";
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 10px;
+  }
+  .dropdown {
+    display: block;
+    margin: 10px 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

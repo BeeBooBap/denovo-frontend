@@ -1,0 +1,10 @@
+.view-all-cases {
+    display: flex;
+    gap: 3rem;
+    max-width: 1400px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+.cases{
+    width: 100%;
+  }

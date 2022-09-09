@@ -1,0 +1,31 @@
+.caseDetails {
+    background: var(--tertiary);
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.05)
+  }
+  .caseDetails h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.3em;
+    color: var(--secondary)
+  }
+  .caseDetails p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #f1f1f1;
+  }
+  .caseDetails span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: var(--tertiary);
+    padding: 6px;
+    color: #f1f1f1;
+  }
+  .caseDetails:hover{
+    background-color: var(--primary);
+    cursor: pointer;
+  }

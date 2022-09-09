@@ -1,0 +1,27 @@
+.predict-button {
+    background-color: var(--tertiary); /* Green */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
+
+.predict-button:hover{
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+}
+
+.text {
+    list-style: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+}
