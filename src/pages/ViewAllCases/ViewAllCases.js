@@ -1,20 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import { useCasesContext } from '../../hooks/useCasesContext'
 
 // components
 import CaseDetails from '../../components/CaseDetails/CaseDetails'
-import SearchBar from 'material-ui-search-bar'
 
 // styling
 import './ViewAllCases.css'
 
 const Home = () => {
     const {cases, dispatch} = useCasesContext()
-    const [query, setQuery] = useState('')
-
-    const handleSearch = () => {
-        console.log(query)
-    }
 
     // retrieving cases 
     useEffect(() => {
@@ -39,11 +33,6 @@ const Home = () => {
     return (
         <div className ='view-all-cases'>
             <div className='cases'>
-
-                <SearchBar
-                onChange={(e) => {setQuery(e)}}
-                onRequestSearch={() => handleSearch()}
-                />
 
                 {cases && cases.map((matter) => (
                     <CaseDetails key={matter._id} matter={matter} />
