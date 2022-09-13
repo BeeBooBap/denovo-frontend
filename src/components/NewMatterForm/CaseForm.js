@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { useCasesContext } from '../../hooks/useCasesContext'
 
 // styling
 import './CaseForm.css'
@@ -12,8 +11,6 @@ const CaseForm = () => {
         respondentKey,
         issueKey
     } = require('../../resources/DropdownKey')
-
-    const { dispatch } = useCasesContext()
 
     const [uniqueID, setUniqueID] = useState('')
     const [caseName, setCaseName] = useState('')
@@ -67,10 +64,6 @@ const CaseForm = () => {
             setError(null)
             setEmptyFields([])
             console.log('New matter added', json)
-            dispatch({
-                type: 'CREATE_MATTER',
-                payload: json
-            })
         }
     } 
 
