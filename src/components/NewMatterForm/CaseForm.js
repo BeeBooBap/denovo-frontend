@@ -27,6 +27,19 @@ const CaseForm = () => {
     const [error, setError] = useState(null)
     const [emptyFields, setEmptyFields] = useState([])
 
+    const getEmptyFields = (fields, length) => {
+        let values = ''
+        if (length < fields.length) {return fields}
+        else {
+            for (let i = 0; i < length; i++) {
+
+                if (i === length -1) { values += fields[i]}
+                else {values += fields[i] + ', '}
+            }
+        }
+        return values
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -153,7 +166,7 @@ const CaseForm = () => {
             
 
             <button>Add Matter</button>
-            {error && <div className="error">{error}</div>}
+            {error && <div className="error">{error + ": " + getEmptyFields(emptyFields, emptyFields.length)}</div>}
         </form>
     )
 }
